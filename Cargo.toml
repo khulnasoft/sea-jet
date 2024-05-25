@@ -1,0 +1,25 @@
+[workspace]
+members = [
+    ".",
+    "sea-jet-derive",
+]
+
+[package]
+name = "sea-jet"
+version = "0.1.0"
+authors = [
+    "KhulnaSoft DevSec <security@khulnasoft.com>",
+]
+edition = "2021"
+description = "A smarter dynamic query builder for MySQL, Postgres and SQLite"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/khulnasoft/sea-jet"
+categories = ["database"]
+keywords = ["database", "sql", "mysql", "postgres", "sqlite"]
+
+[lib]
+name = "sea_jet"
+path = "src/lib.rs"
+
+[dependencies]
+sea-jet-derive = { version = "0.1.0", path = "sea-jet-derive" }
